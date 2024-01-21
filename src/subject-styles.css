@@ -1,0 +1,158 @@
+.subject-h1 {
+  color: #333333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 40px;
+  margin: 16px 0px 16px;
+}
+.subject-h4 {
+font-size: 25px;
+margin-top: 24px;
+margin-bottom: 10px;
+}
+.forms, .forms input, .forms p , .forms textarea{ 
+padding: 0;
+margin: 0;
+outline: none;
+font-family: Verdana, Helvetica, sans-serif;
+font-size: 16px;
+color: rgb(0, 0, 0);
+line-height: 24px;
+} 
+.testbox {
+display: flex;
+justify-content: center;
+align-items: center;
+height: inherit;
+padding: 20px;
+}
+.forms {
+width: 80%;
+padding: 20px;
+border-radius: 6px;
+background: #fff;
+box-shadow: 0 0 25px 0 #1c87c9; 
+}
+.banner {
+position: relative;
+height: 300px;
+background-image:"../src/students-doing-exam.jpg";  
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.banner::after {
+content: "";
+background-color: rgba(139, 183, 219, 0.192); 
+position: absolute;
+width: 100%;
+height: 100%;
+}
+.forms input, .forms textarea  {
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+.forms input,.forms textarea {
+width: calc(100% - 10px);
+padding: 5px;
+}
+
+.sitem:hover p,.sitem:hover i,.sitem input:hover::placeholder,.sitem textarea:hover::placeholder  {
+color: #1c87c9;
+}
+.sitem input:hover,.sitem textarea:hover{
+border: 1px solid transparent;
+box-shadow: 0 0 6px 0 #1c87c9;
+color: #1c87c9;
+}
+.sitem {
+position: relative;
+margin: 10px 0;
+}
+span.required {
+margin-left: 0;
+color: red;
+}
+.btn-block {
+margin-top: 10px;
+text-align: center;
+}
+.sbutton {
+width: auto;
+padding: 10px;
+border: none;
+border-radius: 5px; 
+background: #1c87c9;
+font-size: 16px;
+font-weight: 700;
+color: #fff;
+cursor: pointer;
+}
+.sbutton:hover {
+background: #1e6fa0;
+} 
+
+@media (min-width: 568px) {
+.name-item, .contact-item, .position-item {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.name-item input {
+width: calc(50% - 20px);
+}
+.contact-item .item, .position-item .item {
+width: calc(50% - 8px);
+}
+.contact-item input, .position-item input, .position-item textarea {
+width: calc(100% - 12px);
+}
+.shover{
+color :#1e6fa0;
+}
+.header__item {
+font-family:'Century Gothic', sans-serif;
+text-transform:uppercase;
+background-color: #1c87c967;
+}
+
+.upload-background{
+  background-image:url(../src/image/subject-form.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  
+}
+.subject-background{
+  background-image:url(../src/image/subject-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size:cover;
+ 
+}
+.material-background{
+  background-image:url(../src/image/material-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size:cover;
+ 
+}
+.sreport-background{
+  background-image:url(../src/image/sreport-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size:cover;
+ 
+}
+.blur {
+  background: rgba(161, 200, 245, 0.2); 
+  backdrop-filter: blur(8px);
+  height: 100vh;
+	width: 50%;
+}
+
+}      
